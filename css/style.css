@@ -1,0 +1,226 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    text-transform: uppercase;
+    background: url('../assets/background.jpg');
+    background-repeat: no-repeat;
+    background-position: 30% 55%;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop {
+    margin-left: 5rem;
+    background-color: #e67e34;
+    display: block;
+    height: 20px;
+    padding: 1.5rem 1rem;
+    color: #fff;
+    font-weight: bold;
+}
+.flex-container-header {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+    width: 520px;
+    color: #666;
+}
+
+.flex-container-header a {
+    color: #666;
+    text-decoration: none;
+}
+.flex-container-header a:hover {
+    color: #e67e34;
+}
+
+.initial ul {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.menu-burger ul {
+    margin: 10px 0;
+    position: absolute;
+    right: 3.7rem;
+    text-align:center;
+    display: none;
+}
+.menu-burger ul.ativo {
+    display: block;
+    animation: anima-menu 1s;
+
+}
+@keyframes anima-menu {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.menu-burger ul li {
+    margin: 20px 0;
+    font-size: .975rem;
+}
+.menu-burger a:hover {
+    color: #e67e34;
+
+
+}
+main {
+    display: grid;
+    grid-template-columns: 320px 1fr 400px;
+    
+}
+.compras {
+    line-height: 3rem;
+    padding: 3.5rem;
+}
+.compras li:last-child a{
+    color: #e67e34;
+    font-weight: bold;
+}
+.compras li:last-child a:hover {
+    color: #666;
+    font-weight: normal;
+}
+.compras a {
+    color: #666;
+    text-decoration: none;
+}
+.compras a:hover {
+    color: #e67e34;
+    font-weight: bold;
+}
+
+.central {
+    width: 320px;
+    padding: 4rem;
+
+}
+.central h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #e67e34;
+}
+.price {
+    margin: 15px 0;
+    font-weight: bold;
+}
+.prev {
+    position: relative;
+    display: block;
+    text-indent: 40px;
+    border: none;
+    background-color: #c9c9c9;    
+    text-transform: inherit;
+    padding: 1rem;
+    width: 80px;
+    cursor: pointer;
+}
+.fa-arrow-left {
+    position: absolute;
+    margin-right: 10px;
+    text-indent: -130px;
+}
+.fa-arrow-right {
+    position: absolute;
+    display: inline-block;
+    text-indent: 60px;
+    
+}
+.end {
+    padding: 4rem;
+}
+.next {
+    position: relative;
+    display: block;
+    text-indent: -70px;
+    border: none;
+    background-color: #c9c9c9;    
+    text-transform: inherit;
+    padding: 1rem;
+    margin: 1rem 0;
+    width: 80px;
+    cursor: pointer;
+
+}
+.add-chart {
+    display: block;
+    margin-top: 10px;
+    padding: .6rem;
+    border: none;
+    background-color: #e67e34;
+    color: #fff;
+    font-family: inherit;
+    text-transform: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+.end label::after {
+    content: 's';
+    font-size: .8rem;
+    display: inline-block;
+    text-align: center;
+    padding: .2rem;
+    margin: .6rem;
+    border-radius: 50%;
+    border: 2px solid #c9c9c9;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.end label[for="medium"]::after {
+    content: 'm'
+}
+.end label[for="large"]::after {
+    content: 'l'
+}
+.size input[type="radio"] {
+    display: none;
+}
+.size input:checked + label::after {
+    border: 2px solid #e67e34;
+}
+input[type="number"] {
+    display: block;
+    border: 2px solid #c9c9c9;
+    width: 128px;
+    padding: .5rem 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bold;
+}
+.social {
+    display: flex;
+    padding: 3rem;
+}
+.social li {
+    margin-left: 20px;
+    font-size: 1.2rem;
+}
+.social li a {
+    color: #333;
+}
+.facebook:hover {
+    color: #4267B2;
+}
+.instagram:hover {
+    color:#8a3ab9
+}
+.twitter:hover {
+    color: #1DA1F2;
+}
+
+
+
+
